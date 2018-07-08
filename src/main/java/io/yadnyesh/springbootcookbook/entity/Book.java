@@ -24,7 +24,7 @@ public class Book {
 	@ManyToOne
 	private Publisher publisher;
 	
-	private List<Reviewers> reviewersList;
+	private List<Reviewer> reviewersList;
 	
 	protected Book() {}
 	
@@ -84,11 +84,11 @@ public class Book {
 		this.publisher = publisher;
 	}
 	
-	public List<Reviewers> getReviewersList() {
+	public List<Reviewer> getReviewersList() {
 		return reviewersList;
 	}
 	
-	public void setReviewersList(List<Reviewers> reviewersList) {
+	public void setReviewersList(List<Reviewer> reviewersList) {
 		this.reviewersList = reviewersList;
 	}
 }

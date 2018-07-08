@@ -3,6 +3,7 @@ package io.yadnyesh.springbootcookbook.entity;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.util.List;
 
 @Entity
@@ -16,6 +17,7 @@ public class Author {
 	
 	private String lastName;
 	
+	@OneToMany(mappedBy = "author")
 	private List<Book> bookList;
 	
 	protected Author() {}
